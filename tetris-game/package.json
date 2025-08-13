@@ -1,0 +1,24 @@
+{
+  "name": "tetris-game",
+  "version": "1.0.0",
+  "description": "A classic Tetris game built with HTML5 Canvas and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -o",
+    "dev": "npx live-server --port=3000",
+    "lint": "npx eslint src/js/*.js",
+    "format": "npx prettier --write src/",
+    "test": "npx jest",
+    "build": "echo 'No build step required for vanilla JS project'"
+  },
+  "keywords": ["tetris", "game", "canvas", "javascript"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "eslint": "^8.57.0",
+    "prettier": "^3.0.0",
+    "jest": "^29.7.0"
+  }
+}

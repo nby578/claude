@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-info">
+            <h1>Tetris</h1>
+            <div class="score-board">
+                <div class="score">
+                    <label>Score:</label>
+                    <span id="score">0</span>
+                </div>
+                <div class="level">
+                    <label>Level:</label>
+                    <span id="level">1</span>
+                </div>
+                <div class="lines">
+                    <label>Lines:</label>
+                    <span id="lines">0</span>
+                </div>
+            </div>
+            <div class="next-piece">
+                <h3>Next:</h3>
+                <canvas id="next-canvas" width="80" height="80"></canvas>
+            </div>
+            <div class="controls">
+                <h3>Controls:</h3>
+                <p>← → Move</p>
+                <p>↓ Soft Drop</p>
+                <p>↑ Rotate</p>
+                <p>Space Hard Drop</p>
+                <p>P Pause</p>
+                <p>U Undo</p>
+                <p>M Mute/Unmute</p>
+                <button id="undo-btn">Undo</button>
+                <div class="audio-controls">
+                    <button id="mute-btn">🔊 Mute</button>
+                    <label for="volume-slider">Volume:</label>
+                    <input type="range" id="volume-slider" min="0" max="100" value="30">
+                </div>
+            </div>
+        </div>
+        <div class="game-board">
+            <canvas id="game-canvas" width="300" height="600"></canvas>
+            <div id="game-over" class="game-over hidden">
+                <h2>Game Over!</h2>
+                <p>Final Score: <span id="final-score">0</span></p>
+                <button id="restart-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="src/js/tetris-pieces.js"></script>
+    <script src="src/js/audio-manager.js"></script>
+    <script src="src/js/game-logic.js"></script>
+    <script src="src/js/input-handler.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+</html>

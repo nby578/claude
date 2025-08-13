@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.game-container {
+    display: flex;
+    gap: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 200px;
+}
+
+.game-info h1 {
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.score-board {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #4a90e2;
+}
+
+.score-board > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.score-board label {
+    font-weight: bold;
+}
+
+.next-piece {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #4a90e2;
+    text-align: center;
+}
+
+.next-piece h3 {
+    margin-bottom: 10px;
+}
+
+#next-canvas {
+    background: #000;
+    border: 1px solid #333;
+}
+
+.controls {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #4a90e2;
+}
+
+.controls h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.controls p {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.game-board {
+    position: relative;
+}
+
+#game-canvas {
+    background: #000;
+    border: 3px solid #4a90e2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #ff4444;
+}
+
+.game-over.hidden {
+    display: none;
+}
+
+.game-over h2 {
+    color: #ff4444;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.game-over p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+#restart-btn, #undo-btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+#restart-btn:hover, #undo-btn:hover {
+    background: #357abd;
+}
+
+#undo-btn {
+    background: #ff6b6b;
+}
+
+#undo-btn:hover {
+    background: #ff5252;
+}
+
+.audio-controls {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 1px solid #4a90e2;
+}
+
+#mute-btn {
+    padding: 8px 15px;
+    font-size: 1em;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#mute-btn:hover {
+    background: #218838;
+}
+
+.audio-controls label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+#volume-slider {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 5px;
+    border-radius: 5px;
+    background: #333;
+    outline: none;
+}
+
+#volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4a90e2;
+    cursor: pointer;
+}
+
+#volume-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4a90e2;
+    cursor: pointer;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .game-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .game-info {
+        min-width: auto;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .game-info h1 {
+        font-size: 2em;
+    }
+}
