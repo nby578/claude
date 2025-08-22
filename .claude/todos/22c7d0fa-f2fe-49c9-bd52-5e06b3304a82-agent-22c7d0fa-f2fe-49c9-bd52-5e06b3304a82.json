@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Create tetris project directory structure",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Initialize package.json with necessary dependencies",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Create basic HTML structure",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Create CSS for game styling",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Create JavaScript game logic",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Create CLAUDE.md with project guidance",
+    "status": "completed",
+    "id": "6"
+  }
+]

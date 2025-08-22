@@ -1,0 +1,12 @@
+[
+  {
+    "content": "Fix fireworks performance and freezing issues",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Fix undo system to work per piece instead of per move",
+    "status": "completed",
+    "id": "2"
+  }
+]

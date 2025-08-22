@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Add fireworks particle system for line clears",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Implement undo system to track game state history",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Add undo button/key to revert to previous states",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Update input handler to include undo functionality",
+    "status": "completed",
+    "id": "4"
+  }
+]
